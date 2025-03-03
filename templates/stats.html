@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика переходов</title>
+</head>
+<body>
+    <h1>Статистика переходов</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Кто перешел</th>
+            <th>Время перехода</th>
+        </tr>
+        {% for click in clicks %}
+        <tr>
+            <td>{{ click[0] }}</td>
+            <td>{{ click[1] }}</td>
+            <td>{{ click[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
